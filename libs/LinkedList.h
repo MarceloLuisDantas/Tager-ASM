@@ -55,4 +55,9 @@ int insert(LinkedList *l, char *value, uint32_t index);
 */
 ArrayString *toArray(LinkedList *l);
 
+/*  Checks if a element exist in the LinkedList and returns the idnex
+    Returns -1 if the item doesn't exist
+*/
+int contains(LinkedList *l, String *v);
+
 #endif

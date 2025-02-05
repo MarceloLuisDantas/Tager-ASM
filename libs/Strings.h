@@ -83,5 +83,9 @@ String *get(ArrayString *as, size_t index);
 // Converts the String back to a CString with the '/0' 
 char *StringToCString(String *s);
 
+/*  Return the index of a value in a Array
+    Returns -1 if the item doesn't exist
+*/
+int ascontains(ArrayString *as, String *s);
 
 #endif

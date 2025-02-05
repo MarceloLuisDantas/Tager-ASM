@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/Tager.dir/src/Tager.c.o -o Tager   -L/home/marcelo/Documentos/Tager-ASM/libs  -Wl,-rpath,/home/marcelo/Documentos/Tager-ASM/libs -lStrings -lLinkedList -lFiles 

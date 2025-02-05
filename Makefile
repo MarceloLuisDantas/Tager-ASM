@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named TagerTest
+# Target rules for targets named tager
 
 # Build rule for target.
-TagerTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TagerTest
-.PHONY : TagerTest
+tager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tager
+.PHONY : tager
 
 # fast build rule for target.
-TagerTest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TagerTest.dir/build.make CMakeFiles/TagerTest.dir/build
-.PHONY : TagerTest/fast
+tager/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tager.dir/build.make CMakeFiles/tager.dir/build
+.PHONY : tager/fast
 
 src/Tager.o: src/Tager.c.o
 .PHONY : src/Tager.o
 
 # target to build an object file
 src/Tager.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TagerTest.dir/build.make CMakeFiles/TagerTest.dir/src/Tager.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tager.dir/build.make CMakeFiles/tager.dir/src/Tager.c.o
 .PHONY : src/Tager.c.o
 
 src/Tager.i: src/Tager.c.i
@@ -142,7 +142,7 @@ src/Tager.i: src/Tager.c.i
 
 # target to preprocess a source file
 src/Tager.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TagerTest.dir/build.make CMakeFiles/TagerTest.dir/src/Tager.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tager.dir/build.make CMakeFiles/tager.dir/src/Tager.c.i
 .PHONY : src/Tager.c.i
 
 src/Tager.s: src/Tager.c.s
@@ -150,32 +150,8 @@ src/Tager.s: src/Tager.c.s
 
 # target to generate assembly for a file
 src/Tager.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TagerTest.dir/build.make CMakeFiles/TagerTest.dir/src/Tager.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tager.dir/build.make CMakeFiles/tager.dir/src/Tager.c.s
 .PHONY : src/Tager.c.s
-
-test/test.o: test/test.c.o
-.PHONY : test/test.o
-
-# target to build an object file
-test/test.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TagerTest.dir/build.make CMakeFiles/TagerTest.dir/test/test.c.o
-.PHONY : test/test.c.o
-
-test/test.i: test/test.c.i
-.PHONY : test/test.i
-
-# target to preprocess a source file
-test/test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TagerTest.dir/build.make CMakeFiles/TagerTest.dir/test/test.c.i
-.PHONY : test/test.c.i
-
-test/test.s: test/test.c.s
-.PHONY : test/test.s
-
-# target to generate assembly for a file
-test/test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TagerTest.dir/build.make CMakeFiles/TagerTest.dir/test/test.c.s
-.PHONY : test/test.c.s
 
 # Help Target
 help:
@@ -185,13 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... TagerTest"
+	@echo "... tager"
 	@echo "... src/Tager.o"
 	@echo "... src/Tager.i"
 	@echo "... src/Tager.s"
-	@echo "... test/test.o"
-	@echo "... test/test.i"
-	@echo "... test/test.s"
 .PHONY : help
 
 

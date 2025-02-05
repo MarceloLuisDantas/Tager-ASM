@@ -8,13 +8,12 @@ include_directories(${LIBRARY_DIR})
 
 # Test executable
 add_executable(
-    TagerTest
-    test/test.c
+    tager
     src/Tager.c
 )
 
 # Especifica o diretório onde as bibliotecas compartilhadas estão localizadas
-target_link_directories(TagerTest PRIVATE ${LIBRARY_DIR})
+target_link_directories(tager PRIVATE ${LIBRARY_DIR})
 
 # Linka as bibliotecas ao executável
-target_link_libraries(TagerTest PRIVATE Strings LinkedList Files)
+target_link_libraries(tager PRIVATE Strings LinkedList Files)

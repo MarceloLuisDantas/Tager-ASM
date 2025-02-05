@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/TagerTest.dir/test/test.c.o CMakeFiles/TagerTest.dir/src/Tager.c.o -o TagerTest   -L/home/marcelo/Documentos/Tager-ASM/libs  -Wl,-rpath,/home/marcelo/Documentos/Tager-ASM/libs -lStrings -lLinkedList -lFiles 
